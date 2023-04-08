@@ -35,13 +35,21 @@
                         Login
                     </div>
                     <div class="card-body">
-                        <form action="">
+                        <form action="valida_login.php" method="post">
                             <div class="form-group">
-                                <input type="email" class="form-control" placeholder="E-mail">
+                                <input name="email" type="email" class="form-control" placeholder="E-mail">
                             </div>
                             <div class="form-group">
-                                <input type="password" class="form-control" placeholder="Senha">
+                                <input name="senha" type="password" class="form-control" placeholder="Senha">
                             </div>
+
+                            <?php if (isset($_GET['login']) && $_GET['login'] == 'erro') { ?>
+
+                                <div class="text-danger" style="font-size: 15px;">
+                                    Usuário ou senha inválido(s).
+                                </div>
+
+                            <?php } ?>
                             <button class="btn btn-lg btn-info btn-block">Entrar</button>
                         </form>
                     </div>
@@ -59,7 +67,7 @@
     </script>
 
     <!-- Incio do JS personalizado -->
-    <script src="JS/script.js"></script>
+    <!-- <script src="JS/script.js"></script> -->
 </body>
 
 </html>
