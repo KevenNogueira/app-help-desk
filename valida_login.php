@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 /* 
     Criação da lista de usuarios para login no sistema.  
     O mesmo será criado me um array, pois ainda não esta sendo trabalhado com banco de dados. 
@@ -11,16 +13,18 @@ $lista_usuarios = array(
     array('email' => 'ailton@chamado.com.br', 'senha' => 'ailton.chamdo'),
     array('email' => 'raquel@chamado.com.br', 'senha' => 'raquel.chamado'),
 );
-$usuaria_autenticacao = false;
+$usuario_autenticacao = false;
 
 foreach ($lista_usuarios as $user) {
     if ($user['email'] == $_POST['email'] && $user['senha'] == $_POST['senha']) {
-        $usuaria_autenticacao = true;
+        $usuario_autenticacao = true;
     }
 }
 
-if ($usuaria_autenticacao) {
+if ($usuario_autenticacao) {
     echo 'Usario autenticado';
+    $_SESSION['autenticado'] = 'SIM';
 } else {
+    $_SESSION['autenticado'] = 'NAO';
     header('Location: index.php?login=erro');
 }
