@@ -59,7 +59,7 @@
     </script>
 
     <!-- Incio do JS personalizado -->
-    <script src="JS/script.js"></script>
+    <!-- <script src="JS/script.js"></script> -->
 </body>
 
 </html>
