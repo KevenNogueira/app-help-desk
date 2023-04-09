@@ -25,8 +25,8 @@ foreach ($lista_usuarios as $user) {
 }
 
 if ($usuario_autenticacao) {
-    echo 'Usario autenticado';
     $_SESSION['autenticado'] = 'SIM';
+    header('Location: home.php');
 } else {
     $_SESSION['autenticado'] = 'NAO';
     header('Location: index.php?login=erro');
