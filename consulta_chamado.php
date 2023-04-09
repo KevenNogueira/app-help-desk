@@ -10,7 +10,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />>
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
 
     <!-- Fontewesom -->
     <script src="https://kit.fontawesome.com/7d3a8355c9.js" crossorigin="anonymous"></script>
@@ -53,7 +53,7 @@
                         </div>
                         <div class="row mt-5">
                             <div class="col-6">
-                                <button class="btn btn-lg btn-warning btn-block" type="submit">Voltar</button>
+                                <a class="btn btn-lg btn-warning btn-block" href="home.php">Voltar</a>
                             </div>
                         </div>
                     </div>
