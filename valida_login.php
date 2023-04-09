@@ -12,6 +12,9 @@ $lista_usuarios = array(
     array('email' => 'suporte@chamado.com.br', 'senha' => 'sup.sup'),
     array('email' => 'ailton@chamado.com.br', 'senha' => 'ailton.chamdo'),
     array('email' => 'raquel@chamado.com.br', 'senha' => 'raquel.chamado'),
+    array('email' => 'kaique@chamado.com.br', 'senha' => 'kaique.chamado'),
+    array('email' => 'keven@chamado.com.br', 'senha' => 'keven.chamado'),
+    array('email' => 'mileny@chamado.com.br', 'senha' => 'mileny.chamado'),
 );
 $usuario_autenticacao = false;
 
