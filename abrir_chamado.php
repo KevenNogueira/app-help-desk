@@ -45,14 +45,14 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col">
-                                <form action="">
+                                <form method="post" action="registra_chamado.php">
                                     <div class="form-group">
                                         <label for="">Título</label>
-                                        <input type="text" class="form-control" placeholder="Título">
+                                        <input name="titulo" type="text" class="form-control" placeholder="Título">
                                     </div>
                                     <div class="form-grup">
                                         <label for="">Categoria</label>
-                                        <select class="form-control">
+                                        <select name="categoria" class="form-control">
                                             <option>
                                                 Criação Usuário
                                             </option>
@@ -64,7 +64,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="">Descrição</label>
-                                        <textarea class="form-control" rows="3"></textarea>
+                                        <textarea name="descricao" class="form-control" rows="3"></textarea>
                                     </div>
                                     <div class="row mt-5">
                                         <div class="col-6">
@@ -77,6 +77,11 @@
                                         </div>
                                     </div>
                                 </form>
+                                <?php
+                                if (isset($_GET['chamado']) && $_GET['chamado'] == 'sucesso') {
+                                    echo "<script> alert('Chamado aberto com sucesso!');</script>";
+                                };
+                                ?>
                             </div>
                         </div>
                     </div>
@@ -92,7 +97,6 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
     </script>
-
     <!-- Incio do JS personalizado -->
     <!-- <script src="JS/script.js"></script> -->
 </body>
