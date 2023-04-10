@@ -1,2 +1,3 @@
 Bug ao acessar o AVA | Rede | Não consigo acessar o sistema.
 Criação de conta suporte! | Criação Usuário | Precisamos criar uma conta com o e-mail keven.troyn@chamado.com e senha: keven.chamado.sup
+1784 | Criação Usuário | 1785
