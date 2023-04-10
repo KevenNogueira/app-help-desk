@@ -28,8 +28,13 @@
             <img src="IMG/logo.png" width="30" height="30" alt="Logo Help Desck" class="d-inline-block align-top">
             App Help Desk
         </a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="logoff.php">Sair <i class="fa-solid fa-right-from-bracket"
+                        style="color: rgba(255,255,255,.5)"></i> </a>
+            </li>
+        </ul>
     </nav>
-
     <div class="container">
         <div class="row">
             <div class="card-home">
