@@ -21,3 +21,16 @@ body {
 .erro {
   font-size: 15px;
 }
+
+.titulo {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.categoria {
+  font-size: 18px;
+}
+
+.descricao {
+  font-size: 20px;
+}
