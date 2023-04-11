@@ -58,16 +58,22 @@ fclose($arquivo_chamado);
                             <?php
                             $dados_chamados = explode('|', $chamado);
 
+                            if ($_SESSION['tipo_perfil'] == 2) {
+                                if ($_SESSION['id'] != $dados_chamados[0]) {
+                                    continue;
+                                }
+                            };
+
                             if (count($dados_chamados) < 3) {
                                 continue;
                             }
                             ?>
                             <div class="card mb-3 bg-light">
                                 <div class="card-body">
-                                    <h4 class="card-title titulo"><?php echo $dados_chamados[0] ?></h4>
+                                    <h4 class="card-title titulo"><?php echo $dados_chamados[1] ?></h4>
                                     <h6 class="card-subtitle mb-2 mt-2 text-muted categoria">
-                                        <?php echo $dados_chamados[1] ?></h6>
-                                    <p class="card-text descricao"><?php echo $dados_chamados[2] ?></p>
+                                        <?php echo $dados_chamados[2] ?></h6>
+                                    <p class="card-text descricao"><?php echo $dados_chamados[3] ?></p>
                                 </div>
                             </div>
                         <?php } ?>

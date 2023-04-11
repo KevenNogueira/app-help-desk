@@ -1,4 +1,3 @@
-Impressora não imprime|Impressora|Não localizo a mesma na rede
-Adição de usuario|Criação Usuário|Necessário criar uma conta de suporte.
-Bug de sistema|Software|O sistema não exporta a planilha.
-Erro na importação de arquvivos|Software|Ao tentar fazer a importação de algum arquivo Excel no programa o mesmo apresenta erro. 
+1|Erro na importação de arquvivos|Software|Erro na importação do arquivo Excel. 
+7|Sem internet|Rede|Internet não está funcionando. Apresenta erro no DNS
+6|SSD|Hardware|E preciso um SSD para computador 02 # O mesmo apresenta lentidão.
