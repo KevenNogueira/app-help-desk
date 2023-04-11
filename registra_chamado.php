@@ -3,7 +3,7 @@
 $titulo = str_replace('|', '#', $_POST['titulo']);
 $descricao = str_replace('|', '#', $_POST['descricao']);
 
-$chamado = $titulo . ' | ' . $_POST['categoria'] . ' | ' . $descricao . PHP_EOL;
+$chamado = $titulo . '|' . $_POST['categoria'] . '|' . $descricao . PHP_EOL;
 
 $arquivo_chamado = fopen('D:\Downloads\Programacao\XAMPP\XAMPP\htdocs\WorkSpace\PHP Basico\App Help Desk\Arquivo_Chamado\arquivo.txt', 'a');
 
