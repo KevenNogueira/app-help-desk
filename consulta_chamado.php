@@ -7,7 +7,22 @@ $arquivo_chamado = fopen('D:\Downloads\Programacao\XAMPP\XAMPP\htdocs\WorkSpace\
 $chamados = array();
 while (!feof($arquivo_chamado)) {
     $registro_chamado = fgets($arquivo_chamado);
-    $chamados[] = $registro_chamado;
+
+    echo '<pre>';
+    print_r($registro_chamado);
+    echo '</pre>';
+
+    $dados_chamados = explode('|', $registro_chamado);
+
+    if ($_SESSION['tipo_perfil'] == 2) {
+        if ($_SESSION['id'] != $dados_chamados[0]) {
+            continue;
+        } else {
+            $chamados[] = $registro_chamado;
+        }
+    } else {
+        $chamados[] = $registro_chamado;
+    }
 }
 
 fclose($arquivo_chamado);
@@ -57,12 +72,6 @@ fclose($arquivo_chamado);
                         <?php foreach ($chamados as $chamado) { ?>
                             <?php
                             $dados_chamados = explode('|', $chamado);
-
-                            if ($_SESSION['tipo_perfil'] == 2) {
-                                if ($_SESSION['id'] != $dados_chamados[0]) {
-                                    continue;
-                                }
-                            };
 
                             if (count($dados_chamados) < 3) {
                                 continue;
