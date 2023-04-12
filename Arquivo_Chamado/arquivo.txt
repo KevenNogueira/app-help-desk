@@ -1,3 +1,0 @@
-1|Erro na importação de arquvivos|Software|Erro na importação do arquivo Excel. 
-7|Sem internet|Rede|Internet não está funcionando. Apresenta erro no DNS
-6|SSD|Hardware|E preciso um SSD para computador 02 # O mesmo apresenta lentidão.
