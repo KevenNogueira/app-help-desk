@@ -2,15 +2,11 @@
 
 <?php
 
-$arquivo_chamado = fopen('D:\Downloads\Programacao\XAMPP\XAMPP\htdocs\WorkSpace\PHP Basico\App Help Desk\Arquivo_Chamado\arquivo.txt', 'r');
+$arquivo_chamado = fopen('../../../../app_help_desk/Arquivo_Chamado/arquivo.txt', 'r');
 
 $chamados = array();
 while (!feof($arquivo_chamado)) {
     $registro_chamado = fgets($arquivo_chamado);
-
-    echo '<pre>';
-    print_r($registro_chamado);
-    echo '</pre>';
 
     $dados_chamados = explode('|', $registro_chamado);
 
