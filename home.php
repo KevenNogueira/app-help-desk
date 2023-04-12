@@ -40,6 +40,10 @@
                     <div class="card-header">Menu</div>
                     <div class="card-body">
                         <div class="row">
+                            <div class="col-6 d-flex mb-2 justify-content-center">Abertura Chamado</div>
+                            <div class="col-6 d-flex mb-2 justify-content-center">Consulta Chamado</div>
+                        </div>
+                        <div class="row">
                             <div class="col-6 d-flex justify-content-center">
                                 <a href="abrir_chamado.php">
                                     <img src="IMG/formulario_abrir_chamado.png" alt="Abrir Chamado" width="70" height="70">
