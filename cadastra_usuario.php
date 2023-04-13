@@ -21,15 +21,16 @@ if ($_POST['senha'] != $_POST['senha2']) {
 
     $id_gerado = geraId($ultimo_usuario[0]);
 
-    function geraId($id)
-    {
-        $novo_id = $id + 1;
-        return $novo_id;
-    };
-
     echo $id_gerado;
 
     //$user = '$id' . '|' . $_POST['email'] . '|' . $_POST['senha'] . '|' . $_POST['tipo_perfil'] . PHP_EOL;
 
     //header('Location: home.php?usuario=sucesso');
+};
+
+
+function geraId($id)
+{
+    $novo_id = $id + 1;
+    return $novo_id;
 };
