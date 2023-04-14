@@ -1,3 +1,0 @@
-2|Falha ao acessar o BD|Rede|A rede não deixa conectar ao banco de dados!
-2|Criação de usuario|Criação Usuário|Necessário criar o usuário com as seguinte informações: - E-mail: financeiro@chamado.com.br - Senha: financeiro.chamado
-3|Falha no financeiro |Impressora|Não está imprimindo o relatório! 
