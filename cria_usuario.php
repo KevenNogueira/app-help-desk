@@ -1,10 +1,19 @@
 <?php require_once "validador_acesso.php"; ?>
 
-<?php if (isset($_GET['usuario']) && $_GET['usuario'] == 'sucesso') {
-    echo "<script> alert('Usuário cadastrado com sucesso!'); </script>";
-}
-?>
+<?php
 
+if (isset($_GET['campo_vazio']) && $_GET['campo_vazio'] == 'vazio') {
+    echo "<script> alert('A campos que precisam ser preenchidos!'); </script>";
+}
+if (isset($_GET['email']) && $_GET['email'] == 'igual') {
+    echo "<script> alert('Email já cadastrado na base de dados!'); </script>";
+}
+
+if (isset($_GET['senha']) && $_GET['senha'] == 'erro') {
+    echo "<script> alert('A senha inserida está incorreta!'); </script>";
+}
+
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -39,29 +48,34 @@
             </li>
         </ul>
     </nav>
+
     <div class="container">
         <div class="row">
-            <div class="card-home">
+            <div class="card-user">
                 <div class="card">
-                    <div class="card-header">Menu</div>
+                    <div class="card-header">
+                        Cadastro de Usuário
+                    </div>
                     <div class="card-body">
-                        <div class="row">
-                            <div class="col-6 d-flex mb-2 justify-content-center">Abertura Chamado</div>
-                            <div class="col-6 d-flex mb-2 justify-content-center">Consulta Chamado</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6 d-flex justify-content-center">
-                                <a href="abrir_chamado.php">
-                                    <img src="IMG/formulario_abrir_chamado.png" alt="Abrir Chamado" width="70" height="70">
-                                </a>
+                        <form action="cadastra_usuario.php" method="post">
+                            <div class="form-group">
+                                <input name="email" type="email" class="form-control" placeholder="E-mail">
                             </div>
-                            <div class="col-6 d-flex justify-content-center">
-                                <a href="consulta_chamado.php">
-                                    <img src="IMG/formulario_consultar_chamado.png" alt="Consultar Chamado" width="70" height="70">
-                                </a>
+                            <div class="form-group">
+                                <input name="senha" type="password" class="form-control" placeholder="Senha">
                             </div>
-
-                        </div>
+                            <div class="form-group">
+                                <input name="senha2" type="password" class="form-control" placeholder="Confirme sua senha">
+                            </div>
+                            <div class="form-group">
+                                <select name="tipo_perfil" class="form-control">
+                                    <option value="2">Usuário</option>
+                                    <option value="1">Administrador</option>
+                                </select>
+                            </div>
+                            <button class="btn btn-lg btn-info btn-block">Cadastrar</button>
+                            <a class="btn btn-lg btn-warning btn-block" href="home.php">Voltar</a>
+                        </form>
                     </div>
                 </div>
             </div>
